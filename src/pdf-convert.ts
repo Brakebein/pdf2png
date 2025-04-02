@@ -1,9 +1,9 @@
 import { URL } from 'node:url';
 import { copyFile, readFile, writeFile } from 'node:fs/promises';
 import { createWriteStream } from 'node:fs';
-import { exec, execFile } from 'child-process-promise';
 import tmp, { FileResult } from 'tmp-promise';
 import axios from 'axios';
+import { exec, execFile } from './child-process';
 
 export interface PdfConvertOptions {
   /**
@@ -114,7 +114,9 @@ export class PdfConvert {
       );
 
       // remove the \n at the end
-      return parseInt(stdout.substr(0, stdout.length - 1));
+      return stdout
+        ? parseInt(stdout.toString().substr(0, stdout.length - 1))
+        : 0;
     } catch (err) {
       throw new Error('Unable to get page count: ' + err);
     }

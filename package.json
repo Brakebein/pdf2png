@@ -34,29 +34,26 @@
     "test": "ava"
   },
   "dependencies": {
-    "axios": "^0.27.2",
-    "child-process-promise": "^2.2.1",
+    "axios": "^1.8.4",
     "tmp-promise": "^3.0.0"
   },
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "^14.1.0",
-    "@rollup/plugin-typescript": "^8.3.4",
-    "@types/axios": "^0.14.0",
-    "@types/child-process-promise": "^2.2.2",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-typescript": "^12.1.2",
     "@types/node": "^16.9.1",
     "@types/tmp": "^0.2.3",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
-    "ava": "^4.3.3",
+    "ava": "^6.2.0",
     "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.7.1",
-    "rimraf": "^3.0.2",
-    "rollup": "^2.77.3",
+    "rimraf": "^6.0.1",
+    "rollup": "^3.29.5",
     "rollup-plugin-copy": "^3.4.0",
     "ts-node": "^10.9.1",
-    "typescript": "^4.4.3"
+    "typescript": "^5.4.0"
   },
   "files": [
     "dist",
